@@ -5,7 +5,7 @@ from safety.cli import check
 
 def main(argv=sys.argv[1:]):
     try:
-        check.main(['--full-report'] + argv[:-1])
+        check.main(['--full-report'] + argv)
         return 0
     except SystemExit as error:
         if error.code == 0:
