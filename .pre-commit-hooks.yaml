@@ -4,3 +4,4 @@
     entry: safety_check
     language: python
     files: requirements
+    pass_filenames: false
