@@ -3,7 +3,7 @@ import sys
 from safety.cli import check
 
 
-def main(argv):
+def main(argv=sys.argv[1:]):
     try:
         check.main(['--full-report'] + argv[:-1])
         return 0
