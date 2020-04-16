@@ -5,7 +5,7 @@ from safety.cli import check
 
 def main(argv):
     try:
-        check.main(['--full-report'] + sum((['-r', f] for f in argv), []))
+        check.main(['--full-report'] + argv[:-1])
         return 0
     except SystemExit as error:
         if error.code == 0:
